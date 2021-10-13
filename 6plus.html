@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <link rel="stylesheet" href="6plus.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="total">
+        <form class="search-form" id="search-form">
+            <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <input
+                      type="search"
+                      class="form-control"
+                      id="city-input"
+                      placeholder="Enter a city..."
+                      />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="col-3">
+                  <button type="submit" class="btn btn-primary" id="currentLocation">Current Location</button>
+                </div>
+        </form>
+        <br />
+        <h3 id="city">
+            Berlin
+        </h3>
+            <br />
+        <div class="display">
+           <div class="row">
+        <div class="col-6">
+          <span id="icon"><img src="icon.png"/></span>   <span class="temperature" id="temperature">
+            23 </span>
+            <span class="unit">
+            <a href="#" id = "tempC"> °C </a>|<a href ="#" id ="tempF">°F</a>
+            </span>
+            <br />
+          <p>
+            <div id="update">
+            Tuesday 21:34
+          </div></p>
+        </div>
+        <div class="col-6"> 
+          <h6>
+  Precipitaion: 0%
+          <br/>
+          Humidity: 77%
+          <br/>
+          Wind: 8km/h
+          </h6>
+        </div>
+           </div>
+        </div>
+        <br/>
+        <div class="forecast">
+          <div class="row">
+    <div class="col-2">
+      <h3> ☀️</h3>
+      <br />
+      <h6>17 - 25°C</h6>
+      <p>Mon</p>
+    </div>
+    <div class="col-2">
+      <h3>☀️</h3>
+      <br />
+      <h6>17 - 23°C</h6>
+      <p>Tue</p>
+    </div>
+    <div class="col-2">
+     <h3>☁️</h3> 
+      <br />
+      <h6>15 - 21°C</h6>
+      <p>Wed</p>
+    </div>
+    <div class="col-2">
+     <h3> 🌧</h3> 
+      <br />
+      <h6>13 - 19°C</h6>
+      <p>Thu</p>
+    </div>
+    <div class="col-2">
+     <h3> 🌤</h3> 
+      <br />
+      <h6>17 - 15°C</h6>
+      <p>Fri</p></div>
+  </div>
+        </div>
+      </div>
+      </div>
+      <div class="owner">Open-source code by Linh Lai</div>
+      <script src="6plus.js"></script>
+  </body>
+</html>
